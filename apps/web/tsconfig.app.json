@@ -1,6 +1,6 @@
 {
   "extends": "tsconfig/vue.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "./package.json"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "./package.json", "tailwind.config.ts"],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "composite": true,

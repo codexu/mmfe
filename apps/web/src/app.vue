@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { Page } from 'ui';
-import { name } from '../package.json';
+import { name } from "../package.json";
 </script>
 
 <template>
-  <Page :app-name="name" />
+  <Page :name="name" />
 </template>
