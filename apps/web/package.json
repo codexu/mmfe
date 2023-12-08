@@ -19,6 +19,7 @@
     "@tsconfig/node18": "^18.2.2",
     "@types/node": "^18.18.5",
     "@vitejs/plugin-vue": "^4.4.0",
+    "@vue/eslint-config-airbnb": "^7.0.1",
     "eslint": "^8.49.0",
     "eslint-config-custom": "workspace:*",
     "eslint-plugin-vue": "^9.17.0",
