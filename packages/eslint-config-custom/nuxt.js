@@ -32,6 +32,8 @@ module.exports = {
     "comma-dangle": "off",
     semi: "off",
     "no-undef": "off",
+    quotes: ["error", "single"],
+    "no-console": "warn",
     // add specific rules configurations here
   },
 };

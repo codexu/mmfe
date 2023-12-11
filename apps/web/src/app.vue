@@ -1,8 +1,17 @@
 <script setup lang="ts">
 import { Page } from 'ui';
-import { name } from "../package.json";
+import { ref } from 'vue';
+import { name } from '../package.json';
+
+const { APP_TITLE, APP_DESCRIPTION, APP_BASE_API_URL } = import.meta.env;
+
+const envs = ref({
+  APP_TITLE,
+  APP_DESCRIPTION,
+  APP_BASE_API_URL,
+});
 </script>
 
 <template>
-  <Page :name="name" />
+  <Page :name="name" :envs="envs" />
 </template>

@@ -33,5 +33,6 @@ module.exports = {
     "vue/multi-word-component-names": "off",
     // add specific rules configurations here
     quotes: ["error", "single"],
+    "no-console": "warn",
   },
 };
