@@ -1,5 +1,4 @@
-/** @type {import("eslint").Linter.Config} */
 module.exports = {
   root: true,
-  extends: ["@repo/eslint-config/vue.js"],
-};
+  extends: ["plugin:vue/vue3-essential", '@repo/eslint-config/vue.js'],
+}
