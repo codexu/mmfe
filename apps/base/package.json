@@ -8,10 +8,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.10"
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "theme-change": "^2.5.0",
+    "vue": "^3.5.10",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@tsconfig/node18": "^18.2.4",
     "@vitejs/plugin-vue": "^5.1.4",
