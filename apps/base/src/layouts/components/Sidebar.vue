@@ -1,21 +1,24 @@
 <template>
   <div class="w-64 h-screen px-2 border-r border-gray-200 dark:border-gray-700">
     <ul class="menu">
-      <li><a class="active">Item 1</a></li>
-      <li>
-        <a>Parent</a>
-        <ul>
-          <li><a>Submenu 1</a></li>
-          <li><a>Submenu 2</a></li>
-        </ul>
+      <li v-for="(app, index) in appsRoutes" :key="index">
+        <router-link :class="app.name === route.name ? 'active' : ''" :to="app.path">{{ app.name }}</router-link>
       </li>
-      <li><a>Item 3</a></li>
     </ul>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { ref } from 'vue'
+import { useRouter, RouteRecordRaw, useRoute } from 'vue-router'
 
+const router = useRouter()
+
+const appsRoutes = ref<RouteRecordRaw[]>()
+
+appsRoutes.value = router.getRoutes().find(route => route.name === 'apps')?.children
+
+const route = useRoute()
 </script>
 
 <style lang="scss" scoped>
