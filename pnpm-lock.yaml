@@ -78,21 +78,9 @@ importers:
 
   apps/vue2:
     dependencies:
-      autoprefixer:
-        specifier: ^10.4.20
-        version: 10.4.20(postcss@8.4.47)
       core-js:
         specifier: ^3.8.3
         version: 3.38.1
-      postcss:
-        specifier: ^8.4.47
-        version: 8.4.47
-      tailwindcss:
-        specifier: ^3.4.14
-        version: 3.4.14(ts-node@10.9.2(@types/node@20.17.0)(typescript@5.6.3))
-      theme-change:
-        specifier: ^2.5.0
-        version: 2.5.0
       vue:
         specifier: ^2.6.14
         version: 2.7.16
@@ -115,15 +103,52 @@ importers:
       '@vue/cli-service':
         specifier: ~5.0.0
         version: 5.0.8(@vue/compiler-sfc@3.5.12)(handlebars@4.7.8)(lodash@4.17.21)(prettier@3.3.3)(vue-template-compiler@2.7.16)(vue@2.7.16)(webpack-sources@3.2.3)
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.47)
       eslint:
         specifier: ^7.32.0
         version: 7.32.0
       eslint-plugin-vue:
         specifier: ^8.0.3
         version: 8.7.1(eslint@7.32.0)
+      postcss:
+        specifier: ^8.4.47
+        version: 8.4.47
+      tailwindcss:
+        specifier: ^3.4.14
+        version: 3.4.14(ts-node@10.9.2(@types/node@20.17.0)(typescript@5.6.3))
       vue-template-compiler:
         specifier: ^2.6.14
         version: 2.7.16
+
+  apps/vue3:
+    dependencies:
+      vue:
+        specifier: ^3.5.12
+        version: 3.5.12(typescript@5.6.3)
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^5.1.4
+        version: 5.1.4(vite@5.4.10(@types/node@20.17.0)(terser@5.36.0))(vue@3.5.12(typescript@5.6.3))
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.47)
+      postcss:
+        specifier: ^8.4.47
+        version: 8.4.47
+      tailwindcss:
+        specifier: ^3.4.14
+        version: 3.4.14(ts-node@10.9.2(@types/node@20.17.0)(typescript@5.6.3))
+      typescript:
+        specifier: ~5.6.2
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.9
+        version: 5.4.10(@types/node@20.17.0)(terser@5.36.0)
+      vue-tsc:
+        specifier: ^2.1.6
+        version: 2.1.6(typescript@5.6.3)
 
   packages/eslint-config:
     devDependencies:

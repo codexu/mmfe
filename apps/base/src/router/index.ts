@@ -18,7 +18,7 @@ const router = createRouter({
         {
           path: '/vue3',
           name: 'Vue3',
-          component: () => import('../pages/Vue2.vue')
+          component: () => import('../pages/Vue3.vue')
         },
       ]
     }
