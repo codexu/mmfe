@@ -25,6 +25,11 @@ const router = createRouter({
           name: 'React',
           component: () => import('../pages/React.vue')
         },
+        {
+          path: '/next',
+          name: 'Next',
+          component: () => import('../pages/Next.vue')
+        },
       ]
     }
   ]
