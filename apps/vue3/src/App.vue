@@ -8,7 +8,7 @@
       </div>
       <div class="avatar">
         <div class="w-24 rounded">
-          <img alt="Vue logo" src="/vite.svg" />
+          <img alt="Vite logo" src="/vite.svg" />
         </div>
       </div>
     </div>

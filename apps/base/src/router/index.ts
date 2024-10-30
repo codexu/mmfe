@@ -20,6 +20,11 @@ const router = createRouter({
           name: 'Vue3',
           component: () => import('../pages/Vue3.vue')
         },
+        {
+          path: '/react',
+          name: 'React',
+          component: () => import('../pages/React.vue')
+        },
       ]
     }
   ]
