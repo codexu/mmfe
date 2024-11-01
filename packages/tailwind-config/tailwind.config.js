@@ -1,5 +1,4 @@
 import daisyui from "daisyui"
-import typography from '@tailwindcss/typography'
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -10,7 +9,6 @@ const config = {
     "node_modules/ui/**/*.{vue,jsx,tsx}",
   ],
   plugins: [
-    typography,
     daisyui,
   ],
   daisyui: {
